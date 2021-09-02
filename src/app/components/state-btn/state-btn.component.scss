@@ -1,0 +1,19 @@
+.state-btn{
+    border: 0;
+    padding:.5rem 2rem;
+    background-color: rgb(255, 190, 71);
+    min-height: 2rem;
+    overflow: hidden;
+    position: relative;
+    
+    &:disabled{
+        background-color: rgb(255, 219, 152);
+        color: black;
+    }
+
+    &__content{
+        display: inline-block;
+        // position: absolute;
+    }
+
+}

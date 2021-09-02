@@ -1,0 +1,11 @@
+<button class="state-btn" [disabled]="loading || inValid">
+    <ng-container [ngSwitch]="currState()">
+        <span class="state-btn__content" @myInsertRemoveTrigger *ngSwitchCase="'valid'">
+            <ng-content></ng-content>
+        </span>
+        <span class="state-btn__content" @myInsertRemoveTrigger *ngSwitchCase="'loading'">
+            <div>loading...</div>
+        </span>
+    </ng-container>
+    <!-- <span class="state-btn__content" @myInsertRemoveTrigger *ngIf="loading">Loading</span> -->
+</button>
